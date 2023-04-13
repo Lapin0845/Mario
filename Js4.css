@@ -1,0 +1,65 @@
+
+#game{
+    background-image: url("https://art.pixilart.com/9f12f5c03f414cf.png");
+    width: 650px;
+    height: 550px;
+    margin: auto;
+    border-bottom: 2px solid;
+}
+
+#dino{
+    width: 100px;
+    height: 60px;
+    background-image: url("https://avatars.dzeninfra.ru/get-zen-logos/223306/pub_6009dcbdb19ac232008b50bf_6012343c8b595f6198659627/xh");
+    background-size: 100%;
+    position: relative;
+    top: 390px;
+    left: 5px;
+}
+
+#bird{
+    width: 50px ;
+    height: 50px;
+    background-image: url("https://sun1-19.userapi.com/impg/zHTpPAUSD4iBBL7c-LWc1Y4KhIOnW41J3tWt9g/rZtuEOEzVLY.jpg?size=50x0&quality=88&crop=0,0,224,224&sign=8cbf154c21afcd8053a5240814e9d3f4&ava=1");
+     background-size: 100%;
+    position: relative;
+    top: 200px;
+    left: 600px;
+    animation: birdfly 3.5s infinite linear;
+}
+
+
+
+
+#kaktus{
+    width: 50px;
+    height: 50px;
+    background-image: url("http://avatars.mds.yandex.net/i?id=b6d510d58214c5aa5694c2b2c3d318df-5451642-images-thumbs&n=13");
+    background-size: 100%;
+    position: relative;
+    top: 340px;
+    left: 600px;
+    animation: kaktusrun 2.0s infinite linear;
+}
+
+@keyframes kaktusrun {
+    from{left: 600px;}
+    to{left:-50px;}
+}
+
+.jump{
+    animation: dinojump 0.9s linear;
+}
+
+@keyframes dinojump {
+    0%{top:350px;}
+    33%{top:250px;}
+    66%{top:300px;}
+    100%{top:350px;}
+
+}
+
+@keyframes birdfly {
+    from{left: 600px;}
+    to{left:-50px;}
+}
